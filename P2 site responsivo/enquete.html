@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Kittie Cats</title>
+    <link href="favicon.ico" rel="icon">
+    <link rel="stylesheet" href="normalize.css"><!---Usar css-reset ou normalize.css-->
+    <link rel="stylesheet" href="estilo.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'> <!---pra por responsividade-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!---icones do footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!------------- links do menu principal -------------->
+
+    <header>
+        <nav class="nav">
+            <img id="logo" src="logo.png" alt="logo do kittie cats">
+            <ul>
+                <li class="menu-item"><a href="index.html" target="_self">Home</a></li>
+                <li class="menu-item"><a href="guiaderacas.html" target="_self">Guia de raças</a></li>
+                <li class="menu-item"><a href="cultura.html" target="_self">Variedades</a></li>
+                <li class="menu-item"><a href="equipamentos.html" target="_self">Aplicativos</a></li>
+                <li class="menu-item"><a href="sites.html" target="_self">Outros sites</a></li>
+                <li class="menu-item active"><a href="enquete.html" target="_self">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!----apresenta um questionário com 10 ou mais perguntas para obter a opinião do visitante sobre o hobby----->
+
+        <section id="fundo">
+
+            <h1 id="titulo6">Contato</h1>
+            <p class="center large"> Gostou do site? Não? Dê sua opinião sobre o site, dicas, sugestões, conte-nos sobre
+                seus gatinhos, diga se tem algum conteúdo que julgue estar faltando neste ambiente fofo! Estamos
+                aguardando seu contato!</p>
+
+
+            <form action="formulario.php" method="post">
+                <label for="nome"></label>
+                <input id="nome" name="nome" type="text" placeholder="Nome*">
+
+                <label for="email"></label>
+                <input id="email" name="email" type="text" placeholder="E-mail*">
+
+                <label for="inputCity"></label>
+                <input type="text" class="cid" id="inputCity" placeholder="Cidade/UF*">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+
+                <h2>Enquete</h2>
+
+                <div id="questao1">
+                    <p>1) Seu nivel de satisfação quanto ao site:</p>
+                    <input type="radio" name="avaliacao" value="zero" checked> 0<br>
+                    <input type="radio" name="avaliacao" value="cinco"> 5<br>
+                    <input type="radio" name="avaliacao" value="dez"> 10
+                </div>
+
+                <div id="questao2">
+                    <p>2) Você tem um animal de estimação? </p>
+                    <input type="radio" name="resposta" value="sim" checked> sim<br>
+                    <input type="radio" name="resposta" value="nao"> não
+                </div>
+
+                <div id="questao3">
+                    <p>3) Se sim, qual animal/animais você possui?? </p>
+                    <input type="checkbox" name="animal" value="gato"> Gato <br>
+                    <input type="checkbox" name="animal" value="cachorro"> Cachorro<br>
+                    <input type="checkbox" name="animal" value="hamster"> Hamster <br>
+                    <input type="checkbox" name="animal" value="peixe"> Peixe<br>
+                    <input type="checkbox" name="animal" value="arara"> Arara <br>
+                    <input type="checkbox" name="animal" value="outro"> Outro
+                </div>
+
+                <div id="questao4">
+                    <p>4) Qual o humor do seu pet?? </p>
+                    <input type="checkbox" name="humor" value="happy"> Feliz <br>
+                    <input type="checkbox" name="humor" value="grr"> Zangado<br>
+                    <input type="checkbox" name="humor" value="kkk"> Brincalhão <br>
+                    <input type="checkbox" name="humor" value="zzz"> Dorminhoco<br>
+                    <input type="checkbox" name="humor" value="aff"> Sério <br>
+                    <input type="checkbox" name="humor" value="abracos"> Carente
+                </div>
+
+                <div id="questao5">
+                    <p>5) Seu celular tem mais fotos do seu bichinho do que de qualquer outra coisa? </p>
+                    <input type="radio" name="resposta" value="sim" checked> sim<br>
+                    <input type="radio" name="resposta" value="nao"> não <br>
+                    <input type="radio" name="resposta" value="obvio" checked> tira mais foto que tá pouco <br>
+                    <input type="radio" name="resposta" value="impossibilitado" checked> não tenho celular
+                </div>
+
+                <div id="questao6">
+                    <p>6) Seu pet deita em cima do seu computador quando você vai usá-lo? </p>
+                    <input type="radio" name="resposta" value="sim" checked> sim<br>
+                    <input type="radio" name="resposta" value="nao"> não
+                </div>
+
+                <div id="questao7">
+                    <p>7) Você tem um companheiro pra todas as horas, inclusive as mais reservadas como ir ao banheiro?
+                    </p>
+                    <input type="radio" name="resposta" value="sim" checked> sim<br>
+                    <input type="radio" name="resposta" value="nao"> não
+                </div>
+
+                <div id="questao8">
+                    <p>8) Você já usou voz fininha pra falar com seu animalzinho? </p>
+                    <input type="radio" name="resposta" value="sim" checked> sim<br>
+                    <input type="radio" name="resposta" value="nao"> não
+                </div>
+
+                <div id="questao9">
+                    <p>9) Você coloca um nome no seu bichano mas o chama por outros 30 mil apelidos? </p>
+                    <input type="radio" name="resposta" value="sim" checked> sim<br>
+                    <input type="radio" name="resposta" value="nao"> não
+                </div>
+
+                <div id="questao10">
+                    <p>10) Você já achou que seu animal de estimação tinha fugido e procurarou por horas,só pra
+                        encontrá-lo num lugar improvável, como no fundo do seu guarda-roupas? </p>
+                    <input type="radio" name="resposta" value="sim" checked> sim<br>
+                    <input type="radio" name="resposta" value="nao"> não
+                </div>
+
+                <div id="questao11">
+                    <p>11) Você já ficou por horas sentado/deitado na mesma posição só para não incomodar ele? </p>
+                    <input type="radio" name="resposta" value="sim" checked> sim<br>
+                    <input type="radio" name="resposta" value="nao"> não
+                </div>
+
+                <div id="questao12">
+                    <p>12) Você já comprou brinquedinhos na petshop que foram completamente ignorados, e substituidos
+                        por coisas bobas como um pedaço de barbante? </p>
+                    <input type="radio" name="resposta" value="sim" checked> sim<br>
+                    <input type="radio" name="resposta" value="nao"> não
+                </div>
+
+                <div id="questao13">
+                    <p>13) Você se pergunta o tempo todo como uma criatura pode ser tão linda e fofa? </p>
+                    <input type="radio" name="resposta" value="sim" checked> sim<br>
+                    <input type="radio" name="resposta" value="obvio"> claro
+                </div>
+
+                <p><button name="enviar" type="submit">ENVIAR</button></p>
+            </form>
+
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <div id="rodespaco">
+            <p id="rod">© 2019 KITTIE CATS - Todos os Direitos Reservados</p>
+            <p>Desenvolvido por Jéssica Lira e Viviane Tranquilino</p>
+        </div>
+        <div id="iconesfooter"> <!--- icones do footer -->
+            <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><i class='fab fa-instagram'></i></a>
+            <a href="https://www.twitter.com/?hl=pt-br" target="_blank"><i class='fab fa-twitter'></i></a>
+            <a href="https://www.fb.com/?hl=pt-br" target="_blank"><i class="fa fa-facebook-f"></i></a>
+            <a href="https://www.pinterest.com/?hl=pt-br" target="_blank"><i class="fa fa-pinterest"></i></a>
+            <a href="https://www.behance.net/?hl=pt-br" target="_blank"><i class='fab fa-behance'></i></a>
+            <a href="enquete.html" target="_self"><i class='far fa-envelope'></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,587 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body,
+div,
+h1,
+h2,
+p,
+footer,
+header,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+li,
+p,
+h1,
+h2,
+h3 {
+    margin: 1%;
+}
+
+li,
+li a,
+a,
+p,
+h1,
+h2,
+h3,
+table,
+form {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:link {
+    /* link não visitado, pseudo class1 requisito numero 5**/
+    text-decoration: none;
+    color: #000;
+}
+
+a:visited {
+    /* link visitado, pseudo class2 requisito numero 5**/
+    color: gray;
+}
+
+a:hover {
+    /* mouse sobre o link, pseudo class3 requisito numero 5**/
+    color: #efc3e6;
+}
+
+li {
+    font-size: 15px;
+}
+
+li a:hover {
+    color: #efc3e6;
+}
+
+#logo {
+    display: block;
+    width: 64px;
+    margin-right: 16px;
+}
+
+header {
+    overflow: hidden;
+}
+
+main {
+    /* background das pgs */
+    background-image: url("bgcat.jpg");
+}
+
+/* ----------------------- MENU -------------------- */
+.fixed-menu {
+    width: 100%;
+    position: absolute;
+    margin: auto;
+}
+
+.text-logo {
+    font-size: 18px;
+    color: #fff;
+}
+
+.text-logo>span {
+    color: #efc3e6;
+}
+
+.nav {
+    padding: 16px 5%;
+    font-size: 18px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr 45%;
+    align-items: center;
+    padding: 0 8px;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav li {
+
+    display: inline;
+}
+
+nav ul {
+    /*centralizar o menu*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav .active a {
+    border-bottom: 4px solid #efc3e6;
+    color: #efc3e6;
+}
+
+/* -----------------------  FIM MENU ----------------------- */
+
+#fundo {
+    /* conteudo das pgs fica aqui */
+    max-width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: #FDF7F0;
+    overflow: hidden;
+}
+
+.first-section {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    background-image: url("./img/home/home1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+    justify-content: center;
+    max-width: 70%;
+}
+
+.main-content>div {
+    padding: 16px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+p.center {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+p.large {
+    font-size: 150%;
+}
+
+.imagens,
+#livros,
+#filmes,
+#outros,
+#animacoes,
+#jogos {
+    /*formatação de quase todas as imagens*/
+    display: block;
+    margin: auto;
+    padding: 1%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#visite {
+    /*partes que direcionam ao fale conosco*/
+    max-width: 80%;
+    margin: auto;
+    padding: 1%;
+    box-sizing: border-box;
+    background-color: #e5d0c9;
+}
+
+#visitar {
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: #9f959a;
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;
+    opacity: 0.85;
+    font-family: 'Gochi Hand', cursive;
+}
+
+Table,
+th,
+td {
+    /* ----- tabela do guia de raças --------- */
+    margin: auto;
+    padding: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border: 1px;
+}
+
+#diferente {
+    /* ----- paragrafo diferente atendendo ao requisito n6 --------- */
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px;
+    margin: 5px 10px;
+    border: 2px dotted purple;
+    border-radius: 8px;
+}
+
+#submenu {
+    max-width: 60%;
+    margin: auto;
+    padding: 18px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+#submenu li {
+    display: inline;
+}
+
+#nome {
+    /* -------------------  Fale conosco ------------------------ */
+    border: 1px solid gray;
+    border-radius: 4px;
+    height: 25px;
+    width: 98.6%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+#email,
+.cid {
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 49%;
+    height: 25px;
+    margin-bottom: 1%;
+}
+
+#mensagem {
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 98.3%;
+    height: 100px;
+}
+
+input,
+textarea {
+    background-color: #FFEED4;
+    padding: 1%;
+    box-sizing: border-box;
+    opacity: 0.7;
+}
+
+input:hover,
+textarea:hover {
+    opacity: 1.1;
+}
+
+input:focus,
+#mensagem:focus {
+    background-color: #b16bbf;
+    color: white;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 260px;
+    height: 45px;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #585550;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 9px #999;
+    opacity: 0.8;
+}
+
+button:hover {
+    opacity: 1.0;
+}
+
+button:active {
+    background-color: #b16bbf;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+/* --------------------  FIM Fale Conosco ----------------- */
+
+#questao1 {
+    background-color: #FFFAFA;
+}
+
+#questao2 {
+    background-color: #FFF5EE;
+}
+
+#questao3 {
+    background-color: #FFFAF0;
+}
+
+#questao4 {
+    background-color: #FDF5E6;
+}
+
+#questao5 {
+    background-color: #FFFFF0;
+}
+
+#questao6 {
+    background-color: #FAF0E6;
+}
+
+#questao7 {
+    background-color: #FFF8DC;
+}
+
+#questao8 {
+    background-color: #FAEBD7;
+}
+
+#questao9 {
+    background-color: #FFEBCD;
+}
+
+#questao10 {
+    background-color: #FFE4C4;
+}
+
+#questao11 {
+    background-color: #FFDAB9;
+}
+
+#questao12 {
+    background-color: #FFE4B5;
+}
+
+#questao13 {
+    background-color: #FFE4E1;
+}
+
+#rodape {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #d7cbc8;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+#rodespaco {
+    flex-grow: 1;
+}
+
+#iconesfooter {
+    flex-grow: 1;
+}
+
+#iconesfooter i {
+    font-size: 46px;
+}
+
+#rodape p {
+    text-align: center;
+}
+
+/*------------------------------------INÍCIO Desktop--------------------------------------------*/
+
+@media screen and (min-width:1024px) {
+    .menu-container {
+        grid-template-columns: 1fr 66%;
+    }
+
+    ::selection {
+        /* ----- pseudo elemento1 requisito n5 --------- */
+        color: red;
+        background: yellow;
+    }
+
+    #titulo1centro {
+        /* diferentes micro interações nos h1 por pagina */
+        color: #FFF;
+        font-size: 48px;
+    }
+
+    #titulo1centro>span {
+        font-size: 16px;
+        display: block;
+    }
+
+    #titulo1centro>label {
+        color: #efc3e6;
+    }
+
+
+    #titulo2:hover {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    #titulo3:hover {
+        font-style: italic;
+    }
+
+    #titulo4:hover {
+        font: italic small-caps bold 20px "Comic Sans MS", sans-serif;
+    }
+
+    #titulo5:hover {
+        font: oblique small-caps lighter 22px Times New Roman, Serif;
+    }
+
+    #titulo6:hover {
+        text-align: center;
+    }
+
+    #visitar:hover {
+        color: white;
+        opacity: 1.1;
+    }
+}
+
+/*------------------------------------INÍCIO Tablet------------------------------------------*/
+
+@media screen and (min-width:481px) and (max-width:1366px) {
+    header {
+        width: 100%;
+    }
+
+    .nav {
+        padding: 8px 5%;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr 80%;
+    }
+
+    #fundo,
+    #visite {
+        max-width: 100%;
+    }
+
+    .imagens,
+    #livros,
+    #filmes,
+    #outros,
+    #animacoes,
+    #jogos {
+        /*imagens*/
+        width: 80%;
+    }
+
+    #submenu {
+        padding: 10px 18px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    #submenu li {
+        display: inline;
+    }
+
+    #iconesfooter i {
+        font-size: 36px;
+    }
+}
+
+/*-------------------------------INÍCIO Smartphone--------------------------*/
+
+@media only screen and (max-width:480px) {
+    #logo {
+        width: 60%;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr 90%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    p {
+        margin-bottom: 3%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    #fundo,
+    #visite {
+        max-width: 95%;
+    }
+
+    .imagens,
+    #livros,
+    #filmes,
+    #outros,
+    #animacoes,
+    #jogos {
+        /*imagens*/
+        width: 100%;
+    }
+
+    #submenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    #nome,
+    #email,
+    .cid {
+        width: 98.6%;
+    }
+
+    #mensagem {
+        width: 98.3%;
+    }
+
+    #iconesfooter i {
+        font-size: 20px;
+    }
+}
